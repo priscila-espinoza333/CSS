@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSS class practice</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="./style.css">
+	</head>	
+	<body>
+		<header>
+			<h1>Formulario de Registro </h1>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li> Home </li>
+				<li> Nosotros</li>
+				<li> Login </li>
+				<li> Contactanos </li>
+			</ul>	
+		</nav>
+		<main>
+			<form>
+				<fieldset>
+					<legend>
+						Formulario de Registro
+					</legend>
+					<span id="information"> Ingrese su información </span>
+					<div>
+						<label for="userName" >Nombre</label>
+						<input id="userName" name="userName" class="formElement" type="text" /> 
+					</div>
+					<div>
+						<label for="userEmail">Email</label>
+						<input id="userEmail" name="userEmail" class="formElement" type="text"/>
+					</div>
+					<div>
+						<label for="userPassword">Password</label>
+						<input id="userPassword" name="userPassword" class="formElement" type="password"/>
+					</div>
+					<div>
+						<label for="userPasswordConfirmation">Confirme Password</label>
+						<input id="userPasswordConfirmation" name="userPasswordConfirmation" class="formElement" type="password"/>
+					</div>
+					<div>
+						<label for="userCountry">País</label>
+						<select id="userCountry">
+							<option value="pleaseSelect"> Selecione un País... </option>
+							<option value="CH"> Chile </option>
+							<option value="IT"> Italia</option>
+							<option value="US"> Estados Unidos </option>
+							<option value="JP"> Japon </option>
+						</select>
+					</div>
+					<div>
+						<label>Indique su genero</label>
+						<input id="genderMasculine" type="radio" name="gender" value="M"/> Masculine
+						<input id="genderFeminine" type="radio" name="gender" value="F"/> Feminine
+						<input id="genderFeminine" type="radio" name="gender" value="NB"/> No-binario
+					</div>
+					<input id="cancelForm" class="submissionButtons" type="submit" value="Cancel"/>
+					<input id="submitForm" class="submissionButtons special" type="submit" value="Submit"/>
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+			Coding Dojo - 2023
+		</footer>
+	</body>	
+</html>
